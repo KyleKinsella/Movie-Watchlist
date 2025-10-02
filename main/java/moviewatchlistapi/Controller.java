@@ -57,7 +57,8 @@ public class Controller {
 				Movie movie = new Movie(title, result.getString("Director"), 
 						result.getString("ReleaseYear"), result.getBoolean("WatchedStatus"));
 				
-				System.out.println("Movie data:" + movie.toString()); 
+				System.out.println("Movie data:\n" + movie.toString(movie)); 
+				
 				return movie;
 			}
 			return null;
